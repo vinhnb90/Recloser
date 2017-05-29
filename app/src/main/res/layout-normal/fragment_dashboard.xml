@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    tools:context="esolutions.com.recloser.View.Fragment.DashboardFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_fragment_dashboard_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fragment_dashboard_height_ll_1"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/fragment_dashboard_padding_ll_1"
+            android:paddingRight="@dimen/fragment_dashboard_padding_ll_1"
+            android:weightSum="2">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/ic_line_connected" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="@dimen/fragment_dashboard_width_space"
+                android:layout_height="match_parent" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/ic_line_disconnected" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_fragment_dashboard_2"
+            android:layout_width="@dimen/fragment_dashboard_width"
+            android:layout_height="@dimen/fragment_dashboard_height_ll_2"
+            android:layout_below="@+id/ll_fragment_dashboard_1"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/ll_fragment_dashboard_connected"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/image_btn_connected"
+                android:clickable="true"
+                android:gravity="center_vertical|center_horizontal">
+
+                <TextView
+                    android:id="@+id/tv_fragment_dashboard_connected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:text="0"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/fragment_dashboard_text_size_value" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_fragment_dashboard_disconnected"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/image_btn_disconnected"
+                android:clickable="true"
+                android:gravity="center_vertical|center_horizontal">
+
+                <TextView
+                    android:id="@+id/tv_fragment_dashboard_disconnected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:text="0"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/fragment_dashboard_text_size_value" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_fragment_dashboard_3"
+            android:layout_width="@dimen/fragment_dashboard_width"
+            android:layout_height="@dimen/fragment_dashboard_height_ll_2"
+            android:layout_below="@+id/ll_fragment_dashboard_2"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/ll_fragment_dashboard_event_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/image_btn_over_value"
+                android:clickable="true"
+                android:gravity="center_vertical|center_horizontal">
+
+                <TextView
+                    android:id="@+id/tv_fragment_dashboard_over_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:text="0"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/fragment_dashboard_text_size_value" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_fragment_dashboard_larm_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/image_btn_under_value"
+                android:clickable="true"
+                android:gravity="center_vertical|center_horizontal">
+
+                <TextView
+                    android:id="@+id/tv_fragment_dashboard_under_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:text="0"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/fragment_dashboard_text_size_value" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_fragment_dashboard_4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fragment_dashboard_height_ll_1"
+            android:layout_below="@+id/ll_fragment_dashboard_3"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/fragment_dashboard_padding_ll_1"
+            android:paddingRight="@dimen/fragment_dashboard_padding_ll_1"
+            android:weightSum="2">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/ic_line_over_value" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="@dimen/fragment_dashboard_width_space"
+                android:layout_height="match_parent" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/ic_line_under_value" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

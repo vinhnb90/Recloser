@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="esolutions.com.recloser.View.Fragment.UpdateInfoFragment">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorBackgroundTransparent_row_recycler"
+        app:cardCornerRadius="@dimen/corner_card_row_all_device">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_card_row_fragment_update_info">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_card_row_fragment_update_info"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="3"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/padding_card_row_fragment_update_info"
+                    android:text="Name *"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_title_activity_main" />
+
+                <EditText
+                    android:id="@+id/et_fragment_update_info_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:background="@drawable/background_tv_login"
+                    android:hint="Nhập tên"
+                    android:maxLines="1"
+                    android:maxLength="50"
+                    android:scrollbars="horizontal"
+                    android:singleLine="true"
+                    android:textSize="@dimen/ac_login_text_size_text_input" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_card_row_fragment_update_info"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="3"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/padding_card_row_fragment_update_info"
+                    android:text="Phone *"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_title_activity_main" />
+
+                <EditText
+                    android:id="@+id/et_fragment_update_info_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:maxLength="15"
+                    android:inputType="phone"
+                    android:background="@drawable/background_tv_login"
+                    android:hint="Nhập số điện thoại"
+                    android:maxLines="1"
+                    android:scrollbars="horizontal"
+                    android:singleLine="true"
+                    android:textSize="@dimen/ac_login_text_size_text_input" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_card_row_fragment_update_info"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="3"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/padding_card_row_fragment_update_info"
+                    android:text="Email *"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_title_activity_main" />
+
+                <EditText
+                    android:id="@+id/et_fragment_update_info_email"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:background="@drawable/background_tv_login"
+                    android:hint="Nhập email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:maxLength="50"
+                    android:scrollbars="horizontal"
+                    android:singleLine="true"
+                    android:textSize="@dimen/ac_login_text_size_text_input" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_card_row_fragment_update_info">
+
+                <Button
+                    android:id="@+id/btn_fragment_update_info_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_history_card_row_all_device"
+                    android:padding="@dimen/padding_card_row_fragment_update_info"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    android:textColor="@color/color_text_default"
+                    android:textSize="@dimen/text_size_button" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

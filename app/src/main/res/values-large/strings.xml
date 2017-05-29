@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="scada_e_solutions">SCADA©E-SOLUTIONS</string>
+    <string name="e_solutions_2017_all_rights_reserved">© E-SOLUTIONS 2017 All Rights Reserved</string>
+    <string name="config">Config</string>
+    <string name="login">Login</string>
+    <string name="username">Username(*)</string>
+    <string name="password">Password(*)</string>
+    <string name="ON">On</string>
+    <string name="OFF">Off</string>
+    <string name="default_spinner_select">Chọn biểu đồ thông số</string>
+    <string name="default_spinner_trends_select">Choose Device</string>
+    <string name="row_history_trends_description">Description</string>
+    <string name="row_history_trends_value">Value</string>
+    <string name="row_history_trends_label_time_stamp">Time stamp</string>
+    <string name="btn_show">show</string>
+    <string name="load_data">Load data</string>
+</resources>

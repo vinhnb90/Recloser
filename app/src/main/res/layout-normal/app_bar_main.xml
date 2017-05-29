@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="esolutions.com.recloser.View.Activity.Class.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/padding_between_2_button"
+                android:paddingTop="@dimen/padding_between_2_button">
+
+                <Button
+                    android:id="@+id/btn_app_bar_main_refresh"
+                    android:layout_width="@dimen/app_bar_main_size_button_load"
+                    android:layout_height="@dimen/app_bar_main_size_button_load"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_left_right_card_row_all_device"
+                    android:background="@drawable/ic_refresh_white_48px" />
+
+                <android.support.v4.widget.ContentLoadingProgressBar
+                    android:id="@+id/pbar_content_main_connect"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_toLeftOf="@+id/btn_app_bar_main_refresh"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/pbar_content_main_connect">
+
+                    <TextView
+                        android:id="@+id/tv_app_bar_main_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="Dashboard"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_size_row_item_status_all_device" />
+                </LinearLayout>
+                <!--
+                <ProgressBar
+                    android:id="@+id/pbar_content_main_connect"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/circle_shape"
+                    android:indeterminate="true"
+                    android:indeterminateOnly="false"
+                    android:max="100"
+                    android:progressDrawable="@drawable/circular_progress_bar" />-->
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <!--  <android.support.design.widget.FloatingActionButton
+          android:id="@+id/fab"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="bottom|end"
+          android:layout_margin="@dimen/fab_margin"
+          app:srcCompat="@android:drawable/ic_dialog_email" />-->
+
+</android.support.design.widget.CoordinatorLayout>

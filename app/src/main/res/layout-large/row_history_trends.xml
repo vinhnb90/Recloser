@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/padding_card_row_all_device"
+    android:elevation="@dimen/elevation_card_row_all_device"
+    android:orientation="vertical"
+    android:background="@color/colorBackgroundTransparent_row_recycler"
+    app:cardBackgroundColor="@color/colorBackgroundTransparent_row_recycler"
+    app:cardCornerRadius="@dimen/corner_card_row_all_device"
+    app:cardElevation="@dimen/cardview_default_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackgroundTransparent_row_recycler"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackgroundTransparent_dialog"
+            android:paddingRight="@dimen/padding_card_row_all_device"
+            android:paddingLeft="@dimen/padding_card_row_all_device"
+            >
+
+            <TextView
+                android:id="@+id/tv_row_history_trends_lable_time_stamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/margin_left_right_card_row_all_device"
+                android:background="@android:color/transparent"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/padding_row_item_status_all_device"
+                android:text="@string/row_history_trends_label_time_stamp"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_size_row_item_status_all_device" />
+
+            <TextView
+                android:id="@+id/tv_row_history_trends_time_stamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_left_right_card_row_all_device"
+                android:layout_toRightOf="@+id/tv_row_history_trends_lable_time_stamp"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/padding_row_item_status_all_device"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_size_row_item_status_all_device" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_card_row_all_device">
+
+            <TextView
+                android:id="@+id/tv_row_history_trends_label_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/margin_left_right_card_row_all_device"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/padding_row_item_status_all_device"
+                android:text="@string/row_history_trends_description"
+                android:textColor="@color/color_text_default"
+                android:textSize="@dimen/text_size_row_item_status_all_device" />
+
+            <TextView
+                android:id="@+id/tv_row_history_trends_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_left_right_card_row_all_device"
+                android:background="@android:color/transparent"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/padding_row_item_status_all_device"
+                android:textColor="@color/color_text_default"
+                android:textSize="@dimen/text_size_row_item_status_all_device" />
+
+            <TextView
+                android:id="@+id/tv_row_history_trends_lable_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/margin_left_right_card_row_all_device"
+                android:background="@android:color/transparent"
+                android:gravity="right"
+                android:padding="@dimen/padding_row_item_status_all_device"
+                android:text="@string/row_history_trends_value"
+                android:textColor="@color/color_text_default"
+                android:textSize="@dimen/text_size_row_item_status_all_device" />
+
+
+            <TextView
+                android:id="@+id/tv_row_history_trends_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_row_history_trends_lable_value"
+                android:layout_toRightOf="@+id/tv_row_history_trends_label_description"
+                android:background="@android:color/transparent"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/padding_row_item_status_all_device"
+                android:textColor="@color/color_text_default"
+                android:textSize="@dimen/text_size_row_item_status_all_device" />
+
+
+            <TextView
+                android:id="@+id/tv_row_history_trends_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_row_history_trends_unit"
+                android:layout_toRightOf="@+id/tv_row_history_trends_lable_value"
+                android:background="@android:color/transparent"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/padding_row_item_status_all_device"
+                android:textColor="@color/color_text_default"
+                android:textSize="@dimen/text_size_row_item_status_all_device" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

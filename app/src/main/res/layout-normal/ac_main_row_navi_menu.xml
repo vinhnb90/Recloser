@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/ac_main_padding_row_navi_menu_header"
+    android:orientation="vertical">
+
+    <TextView
+        android:paddingTop="@dimen/ac_main_row_navi_menu_padding_item"
+        android:paddingBottom="@dimen/ac_main_row_navi_menu_padding_item"
+        android:id="@+id/ac_main_row_navi_menu_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/ac_main_padding_row_navi_menu_header"
+        android:textColor="@color/ac_main_color_background_nav_menu_row"
+        android:textSize="@dimen/ac_main_text_size_navi_menu_row" />
+</LinearLayout>

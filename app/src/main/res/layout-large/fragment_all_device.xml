@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context="esolutions.com.recloser.View.Fragment.AllDeviceFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackgroundTransparent">
+
+        <android.support.v7.widget.RecyclerView
+            android:background="@android:color/transparent"
+            android:id="@+id/recycleview_fragment_all_device"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </FrameLayout>
+
+</FrameLayout>

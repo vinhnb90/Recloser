@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">32dp</dimen>
+    <dimen name="activity_vertical_margin">32dp</dimen>
+
+    <dimen name="conrners_boder_full_type_1">10dp</dimen>
+    <dimen name="conrners_boder_full_type_2">10dp</dimen>
+    <dimen name="conrners_boder_full_type_3">3dp</dimen>
+
+    <dimen name="stroke_border_full_type_1">2dp</dimen>
+    <dimen name="stroke_border_full_type_2">@dimen/stroke_border_full_type_1</dimen>
+    <dimen name="stroke_border_full_type_3">@dimen/stroke_border_full_type_1</dimen>
+
+    <dimen name="ac_login_paddding_ll_login">10dp</dimen>
+    <dimen name="ac_login_margin_ll_login">30dp</dimen>
+    <dimen name="ac_login_height_btn_login">50dp</dimen>
+    <dimen name="ac_login_text_size_logo">40sp</dimen>
+    <dimen name="ac_login_text_size_reserved">20sp</dimen>
+    <dimen name="ac_login_text_size_text_input">18sp</dimen>
+
+    <dimen name="ac_config_height">500dp</dimen>
+
+    <dimen name="text_size_title_activity_main">24sp</dimen>
+    <dimen name="ac_main_nav_header_height">200dp</dimen>
+    <dimen name="ac_main_height_logo_user">80dp</dimen>
+    <dimen name="ac_main_padding_row_navi_menu_header">30dp</dimen>
+
+    <dimen name="ac_main_text_size_navi_menu_row">18dp</dimen>
+    <dimen name="ac_main_padding_row_navi_menu">40dp</dimen>
+    <dimen name="ac_main_row_navi_menu_header_height_icon">24dp</dimen>
+    <dimen name="ac_main_row_navi_menu_header_padding_icon">8dp</dimen>
+    <dimen name="ac_main_row_navi_menu_padding_item">8dp</dimen>
+
+    <dimen name="row_info_dashboard_corner">5dp</dimen>
+
+    <dimen name="padding_row_item_status_all_device">5dp</dimen>
+    <dimen name="row_item_info_dashboard_size_status_icon">30dp</dimen>
+    <dimen name="row_info_dashboard_size_text_type">22sp</dimen>
+    <dimen name="row_info_dashboard_padding">15dp</dimen>
+
+    <dimen name="fragment_dashboard_text_size_value">25sp</dimen>
+    <dimen name="fragment_dashboard_size">500dp</dimen>
+    <dimen name="fragment_dashboard_width">400dp</dimen>
+    <dimen name="fragment_dashboard_height_ll_1">60dp</dimen>
+    <dimen name="fragment_dashboard_height_ll_2">200dp</dimen>
+    <dimen name="fragment_dashboard_width_space">180dp</dimen>
+    <dimen name="fragment_dashboard_padding_ll_1">50dp</dimen>
+    <dimen name="elevation_card_row_all_device">10dp</dimen>
+    <dimen name="corner_card_row_all_device">10dp</dimen>
+    <dimen name="margin_between_header_title_row_all_device">10dp</dimen>
+    <dimen name="margin_left_right_card_row_all_device">40dp</dimen>
+    <dimen name="margin_recycler_status_row_all_device">30dp</dimen>
+    <dimen name="text_size_row_item_status_all_device">20sp</dimen>
+    <dimen name="size_row_item_paramater_all_device_iv_statusOnOff">30dp</dimen>
+    <dimen name="padding_card_row_all_device">15dp</dimen>
+    <dimen name="margin_top_bottom_card_row_all_device">20dp</dimen>
+    <dimen name="text_size_button">20sp</dimen>
+    <dimen name="padding_between_2_button">10dp</dimen>
+    <dimen name="margin_row_connected_device">2dp</dimen>
+    <dimen name="padding_card_row_fragment_update_info">7dp</dimen>
+    <dimen name="padding_fragment_detail_device_title">10dp</dimen>
+    <dimen name="size_fragment_detail_device_image">200dp</dimen>
+    <dimen name="size_fragment_detail_device_icon">24dp</dimen>
+    <dimen name="padding_fragment_detail_device_image">5dp</dimen>
+    <dimen name="text_size_fragment_detail_device_title">40sp</dimen>
+    <dimen name="text_size_fragment_detail_device_location">18sp</dimen>
+    <dimen name="size_fragment_detail_device_chart">400dp</dimen>
+    <dimen name="margin_fragment_detail_device">10dp</dimen>
+    <dimen name="height_fragment_detail_device_spin">35dp</dimen>
+    <dimen name="padding_fragment_detail_device_row_spinner">5dp</dimen>
+    <dimen name="padding_row_param_event_device_detail">10dp</dimen>
+    <dimen name="size_icon_status_row_event_detail_device_recycler">40dp</dimen>
+    <dimen name="margin_spinner_trends_all_device_row">2dp</dimen>
+    <dimen name="margin_left_right_card_one_half">20dp</dimen>
+    <dimen name="margin_one_half_top_bottom_row">10dp</dimen>
+    <dimen name="margin_ac_main_navi_menu_header">2dp</dimen>
+    <dimen name="size_activity_main_expandable_listview">300dp</dimen>
+    <dimen name="app_bar_main_size_button_load">48dp</dimen>
+</resources>

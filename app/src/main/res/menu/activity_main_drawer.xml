@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_change_user_profile"
+            android:title="Đổi thông tin"
+            android:icon="@drawable/ic_menu_share"
+            />
+        <!-- android:icon="@drawable/ic_menu_camera"-->
+        <item
+            android:id="@+id/nav_change_pass"
+            android:title="Đổi mật khẩu"
+            android:icon="@drawable/ic_menu_share"/>
+        <!-- android:icon="@drawable/ic_menu_gallery"-->
+        <item
+            android:id="@+id/nav_setting"
+            android:title="Settting"
+            android:icon="@drawable/ic_menu_share"/>
+        <!--android:icon="@drawable/ic_menu_slideshow"-->
+
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Log out"
+            android:icon="@drawable/ic_menu_share"/>
+        <!--android:icon="@drawable/ic_menu_slideshow"-->
+    </group>
+
+    <!--<item android:paramDescription="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:paramDescription="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:paramDescription="Send" />
+        </menu>
+    </item>-->
+
+</menu>

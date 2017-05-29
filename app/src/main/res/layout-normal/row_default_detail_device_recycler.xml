@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    cardCornerRadius="@dimen/corner_card_row_all_device"
+    cardElevation="@dimen/elevation_card_row_all_device"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_row_connected_device"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="left"
+            android:padding="@dimen/padding_row_param_event_device_detail"
+            android:text="Lỗi: Không nhận dạng được là thông số hay trạng thái"
+            android:textSize="@dimen/text_size_row_item_status_all_device" />
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

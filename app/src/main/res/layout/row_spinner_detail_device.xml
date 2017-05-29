@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical|right"
+    android:padding="@dimen/padding_fragment_detail_device_row_spinner"
+    android:weightSum="10">
+
+    <TextView
+        android:id="@+id/tv_row_spinner_detail_device"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/padding_fragment_detail_device_row_spinner"
+        android:layout_marginRight="@dimen/padding_fragment_detail_device_row_spinner"
+        android:layout_weight="10"
+        android:text="text"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_size_fragment_detail_device_location" />
+
+    <CheckBox
+        android:id="@+id/cb_row_spinner_detail_device"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+</LinearLayout>

@@ -1,0 +1,206 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_fragment_detail_device"
+    android:fadeScrollbars="false"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_card_row_fragment_update_info"
+    android:scrollbarThumbVertical = "@drawable/custom_scrollview_track_scroll"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    tools:context="esolutions.com.recloser.View.Fragment.DetailDeviceFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_full_background"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_fragment_detail_device_title"
+                android:weightSum="10">
+                <!--  android:img_background_dashboard="@drawable/border_bottom"-->
+                <TextView
+                    android:id="@+id/tv_fragment_detail_device_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/btn_fragment_detail_device_history"
+                    android:layout_weight="8"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/padding_fragment_detail_device_title"
+                    android:paddingRight="@dimen/padding_fragment_detail_device_title"
+                    android:scrollbars="horizontal"
+                    android:singleLine="true"
+                    android:textColor="@color/color_text_default"
+                    android:textSize="@dimen/text_size_fragment_detail_device_location"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_fragment_detail_device_history"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_fragment_detail_device"
+                    android:layout_weight="2"
+                    android:background="@drawable/button_history_card_row_all_device"
+                    android:text="History"
+                    android:textAllCaps="false"
+                    android:textColor="@color/color_text_default" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorWhite"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_fragment_detail_device"
+                android:background="@android:color/transparent"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_fragment_detail_device_row_spinner">
+
+                <ImageView
+                    android:id="@+id/iv_fragment_detail_device_device"
+                    android:layout_width="@dimen/size_fragment_detail_device_image"
+                    android:layout_height="@dimen/size_fragment_detail_device_image"
+                    android:background="@drawable/border_full_transparent"
+                    android:padding="@dimen/padding_fragment_detail_device_image"
+                   />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_fragment_detail_device_image"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_fragment_detail_device_image">
+
+                    <TextView
+                        android:id="@+id/tv_fragment_detail_device_type_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:padding="@dimen/padding_fragment_detail_device_image"
+                        android:textColor="@color/color_text_default"
+                        android:textSize="@dimen/text_size_fragment_detail_device_title"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_fragment_detail_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_fragment_detail_device_type_name"
+                        android:background="@android:color/transparent"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_fragment_detail_device_image">
+
+                        <ImageView
+                            android:layout_width="@dimen/size_fragment_detail_device_icon"
+                            android:layout_height="@dimen/size_fragment_detail_device_icon"
+                            android:background="@drawable/ic_location" />
+
+                        <TextView
+                            android:id="@+id/tv_fragment_detail_device_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_fragment_detail_device_image"
+                            android:background="@android:color/transparent"
+                            android:textColor="@color/color_text_default"
+                            android:textSize="@dimen/text_size_fragment_detail_device_location" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/ll_fragment_detail_1"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_fragment_detail_device_image">
+
+                        <ImageView
+                            android:id="@+id/iv_icon"
+                            android:layout_width="@dimen/size_fragment_detail_device_icon"
+                            android:layout_height="@dimen/size_fragment_detail_device_icon"
+                            android:background="@drawable/ic_briefcase" />
+
+                        <TextView
+                            android:id="@+id/tv_fragment_detail_device_type_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_fragment_detail_device_image"
+                            android:textColor="@color/color_text_default"
+                            android:textSize="@dimen/text_size_fragment_detail_device_location" />
+                        <!--android:img_background_dashboard="@android:color/transparent"-->
+                    </LinearLayout>
+
+                    <esolutions.com.recloser.Utils.CustomView.CustomSpinner
+                        android:id="@+id/sp_fragment_detail_device"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/border_full_background"
+                        android:drawSelectorOnTop="true"
+                        android:popupBackground="@color/colorBackgroundTransparent_dialog"
+                        android:prompt="@string/default_spinner_select" />
+                    <!--android:layout_height="@dimen/height_fragment_detail_device_spin"-->
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_fragment_detail_device"
+                android:padding="@dimen/padding_fragment_detail_device_row_spinner">
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/lineChart_fragment_detail_device"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_fragment_detail_device_chart" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_bottom_card_row_all_device"
+            android:background="@drawable/border_full_background"
+            android:padding="@dimen/padding_fragment_detail_device_row_spinner"
+            android:weightSum="2">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_fragment_detail_device_param"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_fragment_detail_device_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never"
+                android:visibility="visible" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

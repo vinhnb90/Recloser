@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="esolutions.com.recloser.View.Fragment.UpdateInfoFragment">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorBackgroundTransparent_row_recycler"
+        app:cardCornerRadius="@dimen/corner_card_row_all_device">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_card_row_fragment_update_info">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_card_row_fragment_update_info"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="5"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/padding_card_row_fragment_update_info"
+                    android:text="Current Password *"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_title_activity_main" />
+
+                <EditText
+                    android:id="@+id/et_fragment_update_pass_current"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:background="@drawable/background_tv_login"
+                    android:hint="Nhập mật khẩu hiện tại."
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:scrollbars="horizontal"
+                    android:singleLine="true"
+                    android:textSize="@dimen/ac_login_text_size_text_input" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_card_row_fragment_update_info"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="5"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/padding_card_row_fragment_update_info"
+                    android:text="New Password *"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_title_activity_main" />
+
+                <EditText
+                    android:id="@+id/et_fragment_update_pass_new"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:background="@drawable/background_tv_login"
+                    android:hint="Nhập mật khẩu mới."
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:scrollbars="horizontal"
+                    android:singleLine="true"
+                    android:textSize="@dimen/ac_login_text_size_text_input" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_card_row_fragment_update_info"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="5"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/padding_card_row_fragment_update_info"
+                    android:text="Retype Password *"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_title_activity_main" />
+
+                <EditText
+                    android:id="@+id/et_fragment_update_pass_new_retype"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:background="@drawable/background_tv_login"
+                    android:hint="Nhập lại mật khẩu mới."
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:scrollbars="horizontal"
+                    android:singleLine="true"
+                    android:textSize="@dimen/ac_login_text_size_text_input" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_card_row_fragment_update_info">
+
+                <Button
+                    android:id="@+id/btn_fragment_update_pass_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_history_card_row_all_device"
+                    android:padding="@dimen/padding_card_row_fragment_update_info"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    android:textColor="@color/color_text_default"
+                    android:textSize="@dimen/text_size_button" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

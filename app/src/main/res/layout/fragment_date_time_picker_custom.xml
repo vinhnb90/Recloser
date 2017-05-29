@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <NumberPicker
+            android:descendantFocusability="blocksDescendants"
+            android:id="@+id/numberPicker_fragment_date_time_picker_custom_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp">
+
+        </NumberPicker>
+
+        <NumberPicker
+            android:descendantFocusability="blocksDescendants"
+            android:id="@+id/numberPicker_fragment_date_time_picker_custom_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp">
+
+        </NumberPicker>
+
+        <NumberPicker
+            android:descendantFocusability="blocksDescendants"
+            android:id="@+id/numberPicker_fragment_date_time_picker_custom_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </NumberPicker>
+
+    </LinearLayout>
+</LinearLayout>
